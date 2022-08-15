@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <input v-model="message">
+    <input :value="message" @input="handleChange">
     {{ message }} {{ message + message }}
     <div :id="message"></div>
     <todo-list>
